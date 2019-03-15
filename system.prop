@@ -142,3 +142,8 @@ persist.sys.wfd.virtual=0
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
 persist.vendor.ssr.enable_ramdumps=1
+
+# ZRAM
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=180
+ro.zram.periodic_wb_delay_hours=24
