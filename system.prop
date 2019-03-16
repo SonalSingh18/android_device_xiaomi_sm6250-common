@@ -57,6 +57,9 @@ persist.vendor.cne.feature=1
 persist.vendor.cp.taper_term_mv=6500
 persist.vendor.cp.fcc_main_ua=400000
 
+# Disable vsync for cpu rendered apps
+debug.cpurend.vsync=false
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
