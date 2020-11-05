@@ -23,7 +23,7 @@ cc_binary {
         "service.cpp",
     ],
     header_libs: [
-        "generated_kernel_headers",
+        "qti_kernel_headers",
     ],
     shared_libs: [
         "liblog",
