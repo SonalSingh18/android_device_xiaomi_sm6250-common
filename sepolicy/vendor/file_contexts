@@ -46,6 +46,9 @@
 # Per-boot files
 /data/per_boot(/.*)?                                                    u:object_r:per_boot_file:s0
 
+# Persist
+/persist(/.*)?                                                          u:object_r:mnt_vendor_file:s0
+
 # Persist subsystem
 /mnt/vendor/persist/subsys(/.*)?                                        u:object_r:persist_subsys_file:s0
 
