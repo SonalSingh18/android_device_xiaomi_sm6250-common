@@ -1248,6 +1248,9 @@ vendor/etc/init/qdcmss.rc
 vendor/etc/qdcm_calib_data_ft8756_video_mode_dsi_huaxing_panel.xml
 vendor/etc/qdcm_calib_data_nt36675_video_mode_dsi_tianma_panel.xml
 
+# QTI Telephony- from LA.QSSI.11.0.r1-09400-qssi.0
+system_ext/framework/qti-telephony-common.jar
+
 # RIL
 -system_ext/app/DeviceInfo/DeviceInfo.apk
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
