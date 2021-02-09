@@ -316,6 +316,10 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Perf
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf@2.2.vendor \
+    vendor.qti.hardware.perf@2.0
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
     $(LOCAL_PATH)/configs/perf/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
@@ -327,8 +331,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.xiaomi_sm6250 \
-    vendor.qti.hardware.perf@2.2.vendor
+    android.hardware.power@1.3-service.xiaomi_sm6250
 
 # Permissions
 PRODUCT_COPY_FILES += \
