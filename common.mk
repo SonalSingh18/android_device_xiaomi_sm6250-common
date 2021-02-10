@@ -107,7 +107,9 @@ TARGET_SCREEN_WIDTH := 1080
 # Camera
 PRODUCT_PACKAGES += \
     libgui_vendor \
-    GCam
+    GCam \
+    libcamera2ndk_vendor \
+    vendor.qti.hardware.camera.postproc@1.0.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
