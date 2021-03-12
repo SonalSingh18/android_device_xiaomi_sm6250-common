@@ -206,5 +206,9 @@
             android:exported="true"
             android:permission="ThermalService">
         </service>
+
+        <service
+            android:name="com.xiaomi.parts.BootRestoreService"
+            android:enabled="true" />
     </application>
 </manifest>
