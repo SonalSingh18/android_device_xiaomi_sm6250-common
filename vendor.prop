@@ -187,9 +187,6 @@ vendor.mm.enable.qcom_parser=16777215
 # PASR
 vendor.power.pasr.enabled=true
 
-# Perf
-ro.vendor.extension_library=libqti-perfd-client.so
-
 # Priv-app permissions
 ro.control_privapp_permissions=log
 
