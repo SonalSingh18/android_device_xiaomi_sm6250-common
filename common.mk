@@ -261,6 +261,8 @@ PRODUCT_COPY_FILES += \
 
 # Minijail
 PRODUCT_PACKAGES += \
+    libminijail \
+    libavservices_minijail \
     libavservices_minijail.vendor
 
 # Network
