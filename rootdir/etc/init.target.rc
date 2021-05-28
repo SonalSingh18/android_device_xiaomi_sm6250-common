@@ -83,6 +83,10 @@ on property:sys.boot_completed=1
     write /proc/sys/vm/dirty_expire_centisecs 3000
     write /proc/sys/vm/dirty_background_ratio 10
 
+     # Restrict permissions to socket file
+     # to hide Magisk & co.
+     chmod 440 /proc/net/unix
+
 service sec_nvm /vendor/bin/sec_nvm
     class core
     user system
