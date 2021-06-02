@@ -122,6 +122,10 @@ on boot
     write /dev/cpuset/background/cpus 0-7
     write /dev/cpuset/system-background/cpus 0-7
 
+# Report max frequency to unity tasks
+    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
+    write /proc/sys/kernel/sched_lib_mask_force 255
+
 # Add a cpuset for the camera daemon
     # set default schedTune value for camera-daemon
     write /dev/stune/camera-daemon/schedtune.prefer_idle 1
