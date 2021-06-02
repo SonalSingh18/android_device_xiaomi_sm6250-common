@@ -1106,6 +1106,9 @@ vendor/lib64/vendor.display.color@1.2.so
 vendor/lib64/vendor.display.color@1.3.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
+# PowerOffAlarm
+-product/app/PowerOffAlarm/PowerOffAlarm.apk
+
 # Public libraries
 vendor/etc/public.libraries.txt
 
@@ -1369,7 +1372,7 @@ vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalfeature.so
 
 # Time services
--vendor/app/TimeService/TimeService.apk
+-vendor/app/TimeService/TimeService.apk|323e9e61598e40aec4293719402022c4bc8f0baf
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib/libtime_genoff.so
