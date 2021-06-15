@@ -42,6 +42,10 @@ ro.vendor.bluetooth.wipower=false
 persist.vendor.bt.soc.scram_freqs=192
 persist.bt.a2dp.aac_disable=false
 persist.vendor.bt.aac_frm_ctl.enabled=true
+persist.vendor.bt.a2dp.mac_whitelist=false
+persist.vendor.btstack.enable.twsplussho=true
+persist.vendor.btsatck.absvolfeature=true
+persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false
 
 # CNE
 persist.vendor.cne.feature=1
