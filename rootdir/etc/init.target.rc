@@ -70,9 +70,7 @@ on post-fs
     write /dev/ipa 1
 
 on late-fs
-    wait_for_prop hwservicemanager.ready true
-    exec_start wait_for_keymaster
-    mount_all --late
+    mount_all /vendor/etc/fstab.qcom --late
 
 on property:sys.boot_completed=1
     # Enable ZRAM on boot_complete
