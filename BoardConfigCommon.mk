@@ -102,6 +102,10 @@ BOARD_KERNEL_CMDLINE += kpti=off
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/vintf/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/compatibility_matrix.xml
 
+# Init
+TARGET_INIT_VENDOR_LIB ?= //$(COMMON_PATH):init_xiaomi_atoll
+TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_atoll
+
 # Media
 TARGET_USES_ION := true
 TARGET_DISABLED_UBWC := true
