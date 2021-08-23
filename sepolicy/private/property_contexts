@@ -21,3 +21,6 @@ ro.miui.                u:object_r:exported_system_prop:s0
 # Thermal
 sys.thermal.                    u:object_r:vendor_thermal_engine_prop:s0
 persist.sys.thermal.config      u:object_r:vendor_thermal_engine_prop:s0
+
+# Camera
+vendor.camera.aux.		u:object_r:vendor_camera_prop:s0
