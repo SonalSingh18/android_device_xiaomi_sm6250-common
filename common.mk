@@ -68,6 +68,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
   liba2dpoffload \
   android.hardware.bluetooth.a2dp@1.0-impl \
+  android.hardware.bluetooth.audio@2.0-impl \
   android.hardware.bluetooth.a2dp@1.0-service
 
 # Component override
