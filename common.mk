@@ -256,6 +256,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/keylayout/uinput-goodix.kl:system/usr/keylayout/uinput-goodix.kl
 
+# IORAP Feature -- Imported from LA.QSSI.12.0.r1-07100.01-qssi.0
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
+
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
