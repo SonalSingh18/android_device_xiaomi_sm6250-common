@@ -19,7 +19,6 @@ persist.vendor.btstack.enable.twsplussho=true
 persist.vendor.btstack.enable.swb=true
 persist.vendor.btstack.enable.swbpm=true
 persist.vendor.service.bdroid.soc.alwayson=true
-persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive
 
 # CNE
