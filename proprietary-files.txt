@@ -133,6 +133,10 @@ vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/hw/audio.bluetooth_qti.default.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 
+# Bluetooth (aptX)
+system_ext/lib64/libaptXHD_encoder.so
+system_ext/lib64/libaptX_encoder.so
+
 # Camera
 vendor/etc/camera/camxoverridesettings.txt
 vendor/etc/camera/CFR_para_M_src1.bin
