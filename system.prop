@@ -113,6 +113,7 @@ persist.vendor.radio.snapshot_timer=5
 ro.telephony.default_network=33,33
 ro.vendor.use_data_netmgrd=true
 telephony.lteOnCdmaDevice=1
+persist.sys.fflag.override.settings_provider_model=false
 
 # Time
 persist.timed.enable=true
