@@ -11,5 +11,8 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.line
 # Incremental FS
 ro.incremental.enable=1
 
+# IORap
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
+
 # USAP
 persist.device_config.runtime_native.usap_pool_enabled=true
