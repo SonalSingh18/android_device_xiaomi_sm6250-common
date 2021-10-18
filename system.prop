@@ -135,6 +135,9 @@ ro.charger.enable_suspend = 1
 persist.vendor.cp.taper_term_mv=6500
 persist.vendor.cp.fcc_main_ua=400000
 
+# Storage.xml moment
+persist.sys.binary_xml=false
+
 # WFD
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
