@@ -14,6 +14,9 @@ ro.ril.miui.imei               u:object_r:deviceid_prop:s0
 ro.ril.oem.imei                u:object_r:deviceid_prop:s0
 ro.ril.oem.meid                u:object_r:deviceid_prop:s0
 
+# Audio
+tas.smartpa.debug.             u:object_r:build_prop:s0
+
 # MIUI
 ro.cust.test            u:object_r:exported_system_prop:s0
 ro.miui.                u:object_r:exported_system_prop:s0
