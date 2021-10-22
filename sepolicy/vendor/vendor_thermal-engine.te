@@ -1,0 +1,26 @@
+allow vendor_thermal-engine {
+  vendor_sysfs_devfreq
+  sysfs_msm_subsys
+  thermal_data_file
+}:dir r_dir_perms;
+
+allow vendor_thermal-engine vendor_sysfs_devfreq:file rw_file_perms;
+
+# Rule for vendor_thermal-engine to access init process
+unix_socket_connect(vendor_thermal-engine, property, init);
+
+allow vendor_thermal-engine {
+  vendor_sysfs_battery_supply
+  sysfs_devices_system_cpu
+  vendor_sysfs_devfreq
+  vendor_sysfs_graphics
+  vendor_sysfs_data
+  vendor_sysfs_kgsl
+  ion_device
+  sysfs_thermal
+}:{
+  file
+  lnk_file
+} rw_file_perms;
+
+set_prop(vendor_thermal-engine, vendor_thermal_engine_prop)
