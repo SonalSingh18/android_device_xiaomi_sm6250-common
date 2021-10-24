@@ -20,3 +20,5 @@ dontaudit untrusted_app_all selinuxfs:file read;
 
 # all other no-context attempt by apps (as spotted on iQIYI)
 dontaudit untrusted_app_all sysfs_net:dir search;
+
+dontaudit vendor_cnd wifi_hal_prop:file r_file_perms;
