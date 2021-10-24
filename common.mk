@@ -95,6 +95,8 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default
 
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor \
+    android.hardware.bluetooth@1.1.vendor \
     android.hardware.bluetooth.audio@2.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
@@ -111,7 +113,7 @@ TARGET_SCREEN_WIDTH := 1080
 # Camera
 PRODUCT_PACKAGES += \
     libgui_vendor \
-    Snap
+    Camera2
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
@@ -142,7 +144,11 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     vendor.qti.hardware.display.allocator-service \
-    vendor.qti.hardware.display.mapper@2.0.vendor
+    vendor.qti.hardware.display.mapper@2.0.vendor \
+    vendor.qti.hardware.display.mapper@3.0.vendor \
+    vendor.qti.hardware.display.mapper@4.0.vendor \
+    vendor.qti.hardware.display.composer@1.0.vendor \
+    vendor.qti.hardware.display.composer@2.0.vendor
 
 PRODUCT_PACKAGES += \
     vendor.display.config@1.5 \
@@ -150,11 +156,19 @@ PRODUCT_PACKAGES += \
     vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor 
 
+PRODUCT_PACKAGES += \
+    android.frameworks.displayservice@1.0 \
+    android.frameworks.displayservice@1.0.vendor
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
-    android.hardware.drm@1.4-service.clearkey
+    android.hardware.drm@1.4-service.clearkey \
+    android.hardware.drm@1.0.vendor \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.3.vendor
 
 # Fastbootd
 PRODUCT_PACKAGES += \
@@ -169,7 +183,10 @@ PRODUCT_COPY_FILES += \
 
 # Framework detect
 PRODUCT_PACKAGES += \
-    libqti_vndfwk_detect.vendor
+    libqti_vndfwk_detect \
+    libqti_vndfwk_detect.vendor \
+    libvndfwk_detect_jni.qti \
+    libvndfwk_detect_jni.qti.vendor
 
 # Fstab
 PRODUCT_COPY_FILES += \
@@ -183,14 +200,32 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
 
+# GNSS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0.vendor \
+    android.hardware.gnss@1.1.vendor \
+    android.hardware.gnss@2.0.vendor \
+    android.hardware.gnss@2.1.vendor \
+    android.hardware.gnss.measurement_corrections@1.1.vendor \
+    android.hardware.gnss.visibility_control@1.0.vendor
+
 # Graphics
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl-qti \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
+
+# Crypto
+PRODUCT_PACKAGES += \
+    android.hardware.authsecret@1.0.vendor \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.keymaster@3.0.vendor \
+    android.hardware.keymaster@4.0.vendor \
+    android.hardware.keymaster@4.1.vendor
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -259,7 +294,11 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw
+    libstagefrighthw \
+    libc2dcolorconvert \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_vndk \
+    libcodec2_vndk.vendor
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/media/,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -319,7 +358,32 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PACKAGES += \
     libjson \
-    librmnetctl
+    librmnetctl \
+    android.system.net.netd@1.1 \
+    android.system.net.netd@1.1.vendor \
+    android.hardware.radio@1.4 \
+    android.hardware.radio@1.4.vendor \
+    android.hardware.radio@1.5 \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio.config@1.0 \
+    android.hardware.radio.config@1.0.vendor \
+    android.hardware.radio.config@1.1 \
+    android.hardware.radio.config@1.1.vendor \
+    android.hardware.radio.config@1.2 \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0 \
+    android.hardware.radio.deprecated@1.0.vendor
+
+# Secure Element
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.0 \
+    android.hardware.secure_element@1.0.vendor \
+    android.hardware.secure_element@1.1 \
+    android.hardware.secure_element@1.1.vendor \
+    android.hardware.secure_element@1.2 \
+    android.hardware.secure_element@1.2.vendor \
+    android.hardware.secure_element@1.3 \
+    android.hardware.secure_element@1.3.vendor
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -334,6 +398,13 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.proximity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.proximity.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepcounter.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml
+
+# NeuralNetworks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.0.vendor \
+    android.hardware.neuralnetworks@1.1.vendor \
+    android.hardware.neuralnetworks@1.2.vendor \
+    android.hardware.neuralnetworks@1.3.vendor
 
 # Servicetracker
 PRODUCT_PACKAGES += \
