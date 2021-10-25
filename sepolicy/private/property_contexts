@@ -24,3 +24,8 @@ persist.sys.thermal.config      u:object_r:vendor_thermal_engine_prop:s0
 
 # Camera
 vendor.camera.aux.		u:object_r:vendor_camera_prop:s0
+vendor.panel.display          u:object_r:vendor_camera_prop:s0
+ro.vendor.audio.us.proximity	u:object_r:vendor_camera_prop:s0
+ro.camera.req.fmq.size        u:object_r:vendor_camera_prop:s0
+ro.camera.res.fmq.size        u:object_r:vendor_camera_prop:s0
+ro.vendor.df.effect.conflict	u:object_r:vendor_camera_prop:s0
