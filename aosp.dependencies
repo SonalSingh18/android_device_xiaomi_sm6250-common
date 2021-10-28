@@ -1,0 +1,14 @@
+[
+  {
+    "remote": "github",
+    "repository": "AOSPK/hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "branch": "twelve"
+  },
+  {
+    "remote": "github",
+    "repository": "AOSPK/vendor_qcom_opensource_healthd-ext",
+    "target_path": "hardware/xiaomi",
+    "branch": "twelve"
+  }
+]
