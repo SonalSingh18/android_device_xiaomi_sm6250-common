@@ -271,16 +271,19 @@
     <!-- RT Proxy Cal end -->
 
     <!-- Incall Recording -->
-    <ctl name="MultiMedia9 Mixer VOC_REC_UL" value="0" />
-    <ctl name="MultiMedia9 Mixer VOC_REC_DL" value="0" />
+    <ctl name="MultiMedia1 Mixer VOC_REC_UL" value="0" />
+    <ctl name="MultiMedia1 Mixer VOC_REC_DL" value="0" />
     <ctl name="MultiMedia8 Mixer VOC_REC_UL" value="0" />
     <ctl name="MultiMedia8 Mixer VOC_REC_DL" value="0" />
+    <ctl name="MultiMedia9 Mixer VOC_REC_UL" value="0" />
+    <ctl name="MultiMedia9 Mixer VOC_REC_DL" value="0" />
     <!-- Incall Recording End -->
 
     <!-- Incall Music -->
     <ctl name="Incall_Music Audio Mixer MultiMedia2" value="0" />
     <ctl name="Incall_Music Audio Mixer MultiMedia9" value="0" />
     <ctl name="Incall_Music Audio Mixer MultiMedia1" value="0" />
+    <ctl name="Incall_Music_2 Audio Mixer MultiMedia9" value="0" />
     <ctl name="Incall_Music_2 Audio Mixer MultiMedia2" value="0" />
     <ctl name="Incall_Music_2 Audio Mixer MultiMedia1" value="0" />
     <!-- Incall Music End -->
@@ -1963,7 +1966,7 @@
 
     <path name="compress-offload-playback9 speaker-safe-and-display-port">
         <path name="compress-offload-playback9 display-port" />
-	<path name="compress-offload-playback9" />
+        <path name="compress-offload-playback9" />
     </path>
 
     <path name="compress-offload-playback9 speaker-and-display-port1">
@@ -2197,10 +2200,6 @@
         <path name="incall_music_uplink" />
     </path>
 
-    <path name="incall_music_uplink2">
-        <ctl name="Incall_Music_2 Audio Mixer MultiMedia2" value="1" />
-    </path>
-
     <path name="incall_music_uplink2 speaker">
         <path name="incall_music_uplink2" />
     </path>
@@ -2234,10 +2233,6 @@
     </path>
 
     <path name="incall_music_uplink2 speaker-and-bt-sco-wb">
-        <path name="incall_music_uplink2" />
-    </path>
-
-    <path name="incall_music_uplink2 afe-proxy">
         <path name="incall_music_uplink2" />
     </path>
 
@@ -2373,10 +2368,6 @@
         <path name="incall-rec-downlink-compress" />
     </path>
 
-    <path name="incall-rec-downlink call-proxy-in">
-        <path name="incall-rec-downlink" />
-    </path>
-
     <path name="incall-rec-uplink-and-downlink">
         <path name="incall-rec-uplink" />
         <path name="incall-rec-downlink" />
@@ -2433,10 +2424,6 @@
 
     <path name="incall-rec-uplink-and-downlink-compress headset-mic">
         <path name="incall-rec-uplink-and-downlink-compress" />
-    </path>
-
-    <path name="incall-rec-uplink-and-downlink call-proxy-in">
-        <path name="incall-rec-uplink-and-downlink" />
     </path>
 
     <path name="hfp-sco">
@@ -2576,11 +2563,6 @@
         <ctl name="VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_3_MMode1" value="1" />
     </path>
 
-    <path name="voicemmode1-call call-proxy">
-        <ctl name="PROXY_RX_Voice Mixer VoiceMMode1" value="1" />
-        <ctl name="VoiceMMode1_Tx Mixer PROXY_TX_MMode1" value="1" />
-    </path>
-
     <path name="voicemmode2-call">
         <ctl name="TERT_MI2S_RX_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_3_MMode2" value="1" />
@@ -2716,7 +2698,7 @@
 
     <path name="audio-playback-voip speaker-safe-and-display-port">
         <path name="audio-playback-voip display-port" />
-	<path name="audio-playback-voip" />
+        <path name="audio-playback-voip" />
     </path>
 
     <path name="audio-playback-voip speaker-and-display-port1">
@@ -4009,7 +3991,7 @@
         <path name="incall_music_uplink2" />
     </path>
 
-    <path name="incall_music_uplink2 afe-proxy">
+    <path name="incall_music_uplink2 speaker-safe-and-display-port">
         <path name="incall_music_uplink2" />
     </path>
 
@@ -4025,6 +4007,10 @@
         <path name="incall_music_uplink2" />
     </path>
 
+    <path name="incall_music_uplink2 speaker-safe-and-usb-headphones">
+        <path name="incall_music_uplink2" />
+    </path>
+
     <path name="incall_music_uplink2 headphones">
         <path name="incall_music_uplink2" />
     </path>
@@ -4033,7 +4019,15 @@
         <path name="incall_music_uplink2" />
     </path>
 
+    <path name="incall_music_uplink2 speaker-safe-and-headphones">
+        <path name="incall_music_uplink2" />
+    </path>
+
     <path name="incall_music_uplink2 speaker-and-bt-sco">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-safe-and-bt-sco">
         <path name="incall_music_uplink2" />
     </path>
 
@@ -4042,6 +4036,10 @@
     </path>
 
     <path name="incall_music_uplink2 speaker-and-bt-a2dp">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-safe-and-bt-a2dp">
         <path name="incall_music_uplink2" />
     </path>
 
