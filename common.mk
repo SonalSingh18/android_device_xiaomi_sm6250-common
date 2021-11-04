@@ -169,6 +169,10 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.2.vendor \
     android.hardware.drm@1.3.vendor
 
+# DSP
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.dsp@1.0
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
