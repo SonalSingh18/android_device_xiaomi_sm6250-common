@@ -73,6 +73,7 @@ public class DiracSettingsFragment extends PreferenceFragment implements
         mScenes = (ListPreference) findPreference(PREF_SCENE);
         mScenes.setOnPreferenceChangeListener(this);
         mScenes.setEnabled(enhancerEnabled);
+        mHifi.setEnabled(enhancerEnabled);
     }
 
     @Override
@@ -105,10 +106,13 @@ public class DiracSettingsFragment extends PreferenceFragment implements
 
         DiracUtils.setEnabled(isChecked);
         mScenes.setEnabled(isChecked);
+        mHifi.setEnabled(isChecked);
+        mHeadsetType.setEnabled(isChecked);
+        mPreset.setEnabled(isChecked);
 
-        if (!DiracUtils.getHifiMode()) {
-            mHeadsetType.setEnabled(isChecked);
-            mPreset.setEnabled(isChecked);
+        if (!isChecked){
+            mHifi.setChecked(false);
+            DiracUtils.setHifiMode(0);
         }
     }
 }
