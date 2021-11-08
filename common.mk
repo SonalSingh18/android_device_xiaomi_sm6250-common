@@ -16,6 +16,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
+# Inherit qcom common stuff
+$(call inherit-product, device/qcom/common/common.mk)
+
 # MiuiCamera
 ifeq ($(SHIP_ANX), true)
 $(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
@@ -323,6 +326,9 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
+
+# QTI components
+TARGET_BOARD_PLATFORM := atoll
 
 # RCS
 PRODUCT_PACKAGES += \

@@ -95,6 +95,7 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6250
 TARGET_KERNEL_ADDITIONAL_FLAGS := LD=ld.lld AR=llvm-ar AS=llvm-as NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+TARGET_COMPILE_WITH_MSM_KERNEL := true
 
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
@@ -157,9 +158,6 @@ BOARD_USES_METADATA_PARTITION := true
 
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-# Platform
-TARGET_BOARD_PLATFORM := atoll
-
 # Power
 TARGET_POWERHAL_BOOST_EXT := $(COMMON_PATH)/power/boost-ext.cpp
 TARGET_POWERHAL_MODE_EXT := $(COMMON_PATH)/power/mode-ext.cpp
@@ -169,9 +167,6 @@ TARGET_ODM_PROP += $(COMMON_PATH)/properties/odm.prop
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/properties/product.prop
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/properties/system.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/properties/vendor.prop
-
-# QCOM
-BOARD_USES_QCOM_HARDWARE := true
 
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
