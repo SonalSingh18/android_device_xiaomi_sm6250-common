@@ -1,15 +1,15 @@
 [
   {
-    "repository": "android_device_xiaomi_extras",
-    "target_path": "device/xiaomi/extras"
+    "remote": "github",
+    "repository": "ArrowOS-Devices/android_device_xiaomi_extras",
+    "target_path": "device/xiaomi/extras",
+    "branch": "arrow-12.0"
   },
   {
-    "repository": "android_packages_apps_GCamGOPrebuilt",
-    "target_path": "packages/apps/GCamGOPrebuilt"
-  },
-  {
-    "repository": "android_hardware_xiaomi",
-    "target_path": "hardware/xiaomi"
+    "remote": "github",
+    "repository": "SonalSingh18/android_packages_apps_GCamGOPrebuilt",
+    "target_path": "packages/apps/GCamGOPrebuilt",
+    "branch": "arrow-12.0"
   },
   {
     "remote": "github",
