@@ -1,0 +1,32 @@
+[
+  {
+    "remote": "github",
+    "repository": "ArrowOS-Devices/android_device_xiaomi_extras",
+    "target_path": "device/xiaomi/extras",
+    "branch": "arrow-12.0"
+  },
+  {
+    "remote": "github",
+    "repository": "ArrowOS-Devices/android_packages_apps_GCamGOPrebuilt",
+    "target_path": "packages/apps/GCamGOPrebuilt",
+    "branch": "arrow-12.0"
+  },
+  {
+    "remote": "github",
+    "repository": "ArrowOS-Devices/android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "branch": "arrow-12.0"
+  },
+  {
+    "remote": "github",
+    "repository": "SonalSingh18/vendor_xiaomi_miuicamera",
+    "target_path": "vendor/xiaomi/miuicamera",
+    "branch": "master"
+  },
+  {
+    "remote": "gitlab",
+    "repository": "Panchajanya1999/azure-clang",
+    "target_path": "prebuilts/clang/host/linux-x86/clang-azure",
+    "branch": "main"
+  }
+]
