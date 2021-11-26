@@ -427,15 +427,6 @@ service ppd /vendor/bin/mm-pp-dpps
     socket pps stream 0660 system system
     disabled
 
-on property:init.svc.hwcomposer-2-1=stopped
-    stop ppd
-
-on property:init.svc.hwcomposer-2-1=running
-    start ppd
-
-on property:init.svc.hwcomposer-2-1=restarting
-    stop ppd
-
 on property:ro.boot.multisim_config=*
     setprop persist.radio.multisim.config ${ro.boot.multisim_config}
 
