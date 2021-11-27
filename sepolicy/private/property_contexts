@@ -6,6 +6,7 @@ ro.carrier.name          u:object_r:build_prop:s0
 ro.product.marketname    u:object_r:build_prop:s0
 vendor.sys.camerainfo   u:object_r:exported_system_prop:s0
 ro.product.system.manufacturer u:object_r:build_prop:s0
+ro.build.software.version     u:object_r:build_prop:s0
 
 # IMEI
 persist.radio.imei             u:object_r:deviceid_prop:s0
