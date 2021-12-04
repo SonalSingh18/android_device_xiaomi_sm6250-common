@@ -115,6 +115,7 @@ PRODUCT_PACKAGES += \
     gralloc.atoll \
     hwcomposer.atoll \
     libdisplayconfig.qti \
+    libdisplayconfig.system.qti \
     libqdMetaData \
     libtinyxml \
     memtrack.atoll
@@ -262,6 +263,7 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 PRODUCT_PACKAGES += \
+    libminijail \
     libavservices_minijail \
     libavservices_minijail.vendor \
     libavservices_minijail_vendor \
@@ -308,7 +310,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
     av \
     bt \
     perf \
-    telephony
+    telephony \
+    wfd
 
 # RCS
 PRODUCT_PACKAGES += \
@@ -461,10 +464,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
     frameworks/native/data/etc/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml \
     frameworks/native/data/etc/android.hardware.wifi.rtt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.rtt.xml
-
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libnl
 
 # XiaomiParts
 PRODUCT_PACKAGES += \
