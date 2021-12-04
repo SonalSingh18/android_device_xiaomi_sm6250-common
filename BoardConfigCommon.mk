@@ -62,7 +62,6 @@ USE_DEX2OAT_DEBUG := false
 # Display
 TARGET_SCREEN_DENSITY := 440
 TARGET_USES_HWC2 := true
-TARGET_USES_VULKAN := true
 TARGET_USES_DRM_PP := true
 
 # Filesystem
