@@ -307,7 +307,8 @@ TARGET_BOARD_PLATFORM := atoll
 TARGET_COMMON_QTI_COMPONENTS := \
     av \
     bt \
-    perf
+    perf \
+    telephony
 
 # RCS
 PRODUCT_PACKAGES += \
@@ -322,8 +323,6 @@ PRODUCT_COPY_FILES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    libjson \
-    librmnetctl \
     android.hardware.radio@1.6.vendor \
     android.hardware.radio.config@1.3.vendor \
     android.hardware.radio.deprecated@1.0.vendor \

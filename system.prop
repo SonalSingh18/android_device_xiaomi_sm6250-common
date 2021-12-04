@@ -99,9 +99,6 @@ ro.audio.pcm.samplerate=48000
 # Camera
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,org.lineageos.snap,com.android.camera2,com.android.camera
 
-# CNE
-persist.vendor.cne.feature=1
-
 # Dalvik
 dalvik.vm.dexopt.secondary=true
 
@@ -171,7 +168,6 @@ persist.data.df.mux_count=8
 persist.data.df.ul_mode=5
 persist.data.wda.enable=true
 persist.vendor.data.iwlan.enable=true
-persist.vendor.data.mode=concurrent
 persist.vendor.radio.atfwd.start=true
 persist.vendor.radio.data_con_rprt=1
 persist.vendor.radio.redir_party_num=1
