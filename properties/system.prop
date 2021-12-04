@@ -47,7 +47,6 @@ ro.qc.sdk.audio.fluencetype=none
 # Bluetooth
 persist.vendor.btstack.aac_frm_ctl.enabled=true
 persist.vendor.service.bdroid.soc.alwayson=true
-ro.bluetooth.library_name=libbluetooth_qti.so
 persist.service.btui.use_aptx=1
 persist.bt.enableAptXHD=true
 persist.bt.a2dp.aptx_disable=false
