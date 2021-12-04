@@ -305,6 +305,7 @@ PRODUCT_PACKAGES += \
 # QTI components
 TARGET_BOARD_PLATFORM := atoll
 TARGET_COMMON_QTI_COMPONENTS := \
+    av \
     bt \
     perf
 
