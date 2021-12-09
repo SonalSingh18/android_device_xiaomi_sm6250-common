@@ -114,6 +114,8 @@ ro.telephony.default_network=33,33
 ro.vendor.use_data_netmgrd=true
 telephony.lteOnCdmaDevice=1
 persist.sys.fflag.override.settings_provider_model=false
+ril.subscription.types=RUIM
+rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 
 # Time
 persist.timed.enable=true
