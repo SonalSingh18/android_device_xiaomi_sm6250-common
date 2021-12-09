@@ -259,15 +259,6 @@ on property:sys.boot_completed=1
 	start nv_mac
 #end
 
-service vibrator_calibration /vendor/bin/vibrator_calibration
-     class late_start
-     user system
-     group system
-     oneshot
-
-on property:sys.boot_completed=1
-	start vibrator_calibration
-
 service spdaemon /vendor/bin/spdaemon
     class core
     user system
