@@ -322,6 +322,10 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.3-service.xiaomi_sm6250 \
     vendor.qti.hardware.perf@2.2.vendor
 
+# QTI
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
+
 # Recovery
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.recovery.qcom.rc:recovery/root/init.recovery.qcom.rc \
