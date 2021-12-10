@@ -329,6 +329,10 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.3-service.xiaomi_sm6250 \
     vendor.qti.hardware.perf@2.2.vendor
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml
+
 # QTI
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.systemhelper@1.0.vendor
