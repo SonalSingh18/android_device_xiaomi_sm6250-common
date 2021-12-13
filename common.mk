@@ -21,6 +21,8 @@ ifeq ($(SHIP_ANX), true)
 $(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
 endif
 
+RELAX_USES_LIBRARY_CHECK := true
+
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
