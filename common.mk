@@ -19,6 +19,8 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 # MiuiCamera
 $(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
 
+RELAX_USES_LIBRARY_CHECK := true
+
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
