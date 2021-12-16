@@ -236,11 +236,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/usr/keylayout/uinput-goodix.kl:system/usr/keylayout/uinput-goodix.kl \
     $(LOCAL_PATH)/configs/usr/keylayout/sm8150-tavil-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/sm8150-tavil-snd-card_Button_Jack.kl
 
-# IPACM
-PRODUCT_PACKAGES += \
-    ipacm \
-    IPACM_cfg.xml
-
 # IR
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
