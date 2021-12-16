@@ -910,6 +910,15 @@ vendor/firmware/ipa_fws.b04
 vendor/firmware/ipa_fws.elf
 vendor/firmware/ipa_fws.mdt
 
+# IPACM
+vendor/bin/ipacm
+vendor/etc/init/ipacm.rc
+vendor/etc/IPACM_cfg.xml
+vendor/lib64/libipanat.so
+vendor/lib64/libnetfilter_conntrack.so
+vendor/lib64/libnfnetlink.so
+vendor/lib64/liboffloadhal.so
+
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
 vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
