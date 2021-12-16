@@ -27,13 +27,6 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-function configure_read_ahead_kb_values() {
-    # set 512 for >= 4GB targets.
-        echo 512 > /sys/block/mmcblk0/bdi/read_ahead_kb
-        echo 512 > /sys/block/mmcblk0/queue/read_ahead_kb
-        echo 512 > /sys/block/mmcblk0rpmb/bdi/read_ahead_kb
-}
-
 function configure_memory_parameters() {
     # Set Memory parameters.
     #
@@ -118,7 +111,6 @@ function configure_memory_parameters() {
     # wsf Range : 1..1000 So set to bare minimum value 1.
     echo 1 > /proc/sys/vm/watermark_scale_factor
 
-    configure_read_ahead_kb_values
 }
 
 #Apply settings for atoll
