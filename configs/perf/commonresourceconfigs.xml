@@ -142,7 +142,6 @@ need to be added just before the end of it's major group. -->
     <!-- cpubw hwmon major start -->
     <Major OpcodeValue="0x6" />
         <!-- ALl the following minors might change based on target. -->
-        <Minor OpcodeValue="0x0" Node="/sys/class/devfreq/soc:qcom,cpubw/min_freq" />
         <Minor OpcodeValue="0x1" Node="/sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/decay_rate" />
         <Minor OpcodeValue="0x2" Node="/sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/io_percent" />
         <Minor OpcodeValue="0x3" Node="SPECIAL_NODE - cpubw_hwmon_hyst_opt" />
@@ -217,7 +216,6 @@ need to be added just before the end of it's major group. -->
     <!-- llcbw hwmon major start -->
     <Major OpcodeValue="0xC" />
         <!-- ALl the following minors node path might change based on target. -->
-        <Minor OpcodeValue="0x0" Node="/sys/class/devfreq/soc:qcom,llccbw/min_freq" />
         <Minor OpcodeValue="0x1" Node="/sys/class/devfreq/soc:qcom,llccbw/bw_hwmon/io_percent" />
         <Minor OpcodeValue="0x2" Node="SPECIAL_NODE - llcbw_hwmon_hyst_opt" />
         <Minor OpcodeValue="0x3" Node="/sys/class/devfreq/soc:qcom,llccbw/bw_hwmon/sample_ms" />
