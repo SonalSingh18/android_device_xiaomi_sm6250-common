@@ -11,6 +11,9 @@ from locale import LC_ALL, setlocale, strcoll
 from pathlib import Path
 
 
+def removeprefix(string: str, prefix: str) -> str:
+    return string[len(prefix):] if string.startswith(prefix) else string
+
 def strcoll_extract_utils(string1: str, string2: str) -> int:
     # Skip logic if one of the string if empty
     if not string1 or not string2:
@@ -18,8 +21,8 @@ def strcoll_extract_utils(string1: str, string2: str) -> int:
 
     # Remove '-' from strings if there,
     # it is used to indicate a build target
-    string1 = re.sub("^-", "", string1)
-    string2 = re.sub("^-", "", string2)
+    string1 = removeprefix(string1, '-')
+    string2 = removeprefix(string2, '-')
 
     # If no directories, compare normally
     if "/" not in string1 and "/" not in string2:
