@@ -234,5 +234,10 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
+# MiuiCamera
+ifeq ($(SHIP_ANX), true)
+-include vendor/xiaomi/miuicamera/BoardConfigAnx.mk
+endif
+
 # Inherit proprietary blobs
 -include vendor/xiaomi/sm6250-common/BoardConfigVendor.mk
