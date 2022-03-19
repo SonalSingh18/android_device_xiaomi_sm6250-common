@@ -285,7 +285,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti
+    android.hardware.power@1.3-service.xiaomi_sm6250
 
 # QTI components
 TARGET_BOARD_PLATFORM := atoll
