@@ -14,5 +14,6 @@ ro.incremental.enable=1
 # IORap
 persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 
-# Elixir
-org.elixir.device=Miatoll
+# PPUI
+ro.pixelplusui.maintainer=Lopster_70
+org.pixelplusui.device=Miatoll
