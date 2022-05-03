@@ -60,6 +60,11 @@ persist.vendor.cp.fcc_main_ua=400000
 # Disable vsync for cpu rendered apps
 debug.cpurend.vsync=false
 
+# SkiaGL Threaded
+debug.renderengine.backend=skiaglthreaded
+debug.hwui.renderer=skiagl
+renderthread.skia.reduceopstasksplitting=true 
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
