@@ -5,3 +5,8 @@ vendor.qti.hardware.radio.qtiradio.IQtiRadioStable/slot1    u:object_r:vendor_ha
 vendor.qti.hardware.radio.qtiradio.IQtiRadioStable/slot2    u:object_r:vendor_hal_telephony_service:s0
 vendor.qti.hardware.radio.am.IQcRilAudio/slot1              u:object_r:vendor_hal_telephony_service:s0
 vendor.qti.hardware.radio.am.IQcRilAudio/slot2              u:object_r:vendor_hal_telephony_service:s0
+
+DisplayFeatureControl                                       u:object_r:DisplayFeatureControl:s0
+perfshielder                                                u:object_r:perfshielder:s0
+miui_multi_display                                          u:object_r:miui_multi_display:s0
+ProcessManager                                              u:object_r:ProcessManager:s0
