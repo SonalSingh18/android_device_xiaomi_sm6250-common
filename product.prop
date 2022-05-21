@@ -16,3 +16,6 @@ persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 
 # Elixir
 org.elixir.device=Miatoll
+
+# Phantom process monitoring
+sys.fflag.override.settings_enable_monitor_phantom_procs=false
