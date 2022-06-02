@@ -149,6 +149,10 @@ persist.vendor.cp.fcc_main_ua=400000
 # Storage.xml moment
 persist.sys.binary_xml=false
 
+# WFD
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0
+
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
 persist.vendor.ssr.enable_ramdumps=1
