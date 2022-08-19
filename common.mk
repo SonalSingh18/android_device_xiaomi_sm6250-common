@@ -413,6 +413,10 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     kernel/xiaomi/sm6250
 
+# Shim
+PRODUCT_PACKAGES += \
+    libwatermark_shim
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
