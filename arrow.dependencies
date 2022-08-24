@@ -14,6 +14,12 @@
     "branch": "12.1"
   },
   {
+    "remote": "github",
+    "repository": "AOSPA/android_vendor_google_interfaces",
+    "target_path": "vendor/google/interfaces",
+    "branch": "sapphire"
+  },
+  {
     "remote": "gitlab",
     "repository": "arrowos-project/android_prebuilts_clang_host_linux-x86_clang-r437112b",
     "target_path": "prebuilts/clang/host/linux-x86/clang-r437112b",
