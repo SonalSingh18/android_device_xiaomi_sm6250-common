@@ -1014,10 +1014,6 @@ vendor/lib64/liblistensoundmodel2.so
 vendor/lib64/libmulawdec.so
 vendor/lib64/libjnihelper.so
 
-# Soundtrigger HAL
-vendor/lib/hw/sound_trigger.primary.atoll.so
-vendor/lib64/hw/sound_trigger.primary.atoll.so
-
 # Media
 vendor/etc/seccomp_policy/mediacodec.policy
 vendor/etc/system_properties.xml
