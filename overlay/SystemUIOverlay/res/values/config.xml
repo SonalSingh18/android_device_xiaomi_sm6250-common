@@ -59,4 +59,9 @@
      vibrator is capable of subtle vibrations -->
     <bool name="config_vibrateOnIconAnimation">true</bool>
 
+    <!-- The default tiles to display in QuickSettings -->
+    <string name="quick_settings_tiles_default" translatable="false">
+        wifi,cell,bt,flashlight,sound,reboot,location,hotspot,screenrecord,cast,caffeine,airplane,battery,night,reduce_brightness,dark,dataswitch,rotation,fpsinfo,cpuinfo,onthego,qr_code_scanner
+    </string>
+
 </resources>

@@ -116,6 +116,9 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
+
 # Call recording
 PRODUCT_PACKAGES += \
     com.google.android.apps.dialer.call_recording_audio.features.xml
@@ -345,7 +348,6 @@ PRODUCT_PACKAGES += \
    CarrierConfigOverlay \
    DialerOverlay \
    FrameworksResOverlay \
-   NotchBarKillerOverlay \
    SettingsOverlay \
    SettingsProviderOverlay \
    SystemUIOverlay \
@@ -375,6 +377,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
 
+# Prebuilts
+PRODUCT_PACKAGES += \
+    Drive \
+    Maps \
+    PrebuiltGmail
+
+PRODUCT_PACKAGES += \
+    PixelThemedIconsOverlay \
+    PixelLauncherDT2S
+
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
@@ -385,6 +397,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.recovery.qcom.rc:recovery/root/init.recovery.qcom.rc \
     $(LOCAL_PATH)/rootdir/bin/init.recovery.qcom.sh:recovery/root/init.recovery.qcom.sh
+
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
 
 # RIL
 PRODUCT_PACKAGES += \
