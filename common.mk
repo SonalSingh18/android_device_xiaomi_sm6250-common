@@ -133,10 +133,6 @@ PRODUCT_COPY_FILES += \
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
-# Dexpreopt
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI
-
 # Display
 PRODUCT_PACKAGES += \
     disable_configstore \
@@ -328,7 +324,9 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
 
 # MiuiCamera
+ifeq ($(SHIP_MIUICAM),true)
 $(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
+endif
 
 # Net
 PRODUCT_PACKAGES += \
@@ -349,7 +347,6 @@ PRODUCT_PACKAGES += \
    CarrierConfigOverlay \
    DialerOverlay \
    FrameworksResOverlay \
-   NotchBarKillerOverlay \
    SettingsOverlay \
    SettingsProviderOverlay \
    SystemUIOverlay \
@@ -389,6 +386,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.recovery.qcom.rc:recovery/root/init.recovery.qcom.rc \
     $(LOCAL_PATH)/rootdir/bin/init.recovery.qcom.sh:recovery/root/init.recovery.qcom.sh
+
+# RemovePackages
+PRODUCT_PACKAGES += \
+    RemovePackages
 
 # RIL
 PRODUCT_PACKAGES += \
