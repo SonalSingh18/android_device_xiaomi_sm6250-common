@@ -16,6 +16,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
+# GMS
+$(call inherit-product, device/xiaomi/sm6250-common/configs/gms_full.mk)
+
 # Disable Java debug info
 USE_DEX2OAT_DEBUG := false
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
@@ -132,10 +135,6 @@ PRODUCT_COPY_FILES += \
 
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
-
-# Dexpreopt
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI
 
 # Display
 PRODUCT_PACKAGES += \
@@ -328,7 +327,9 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
 
 # MiuiCamera
+ifeq ($(SHIP_MIUICAM),true)
 $(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
+endif
 
 # Net
 PRODUCT_PACKAGES += \
@@ -349,7 +350,6 @@ PRODUCT_PACKAGES += \
    CarrierConfigOverlay \
    DialerOverlay \
    FrameworksResOverlay \
-   NotchBarKillerOverlay \
    SettingsOverlay \
    SettingsProviderOverlay \
    SystemUIOverlay \
