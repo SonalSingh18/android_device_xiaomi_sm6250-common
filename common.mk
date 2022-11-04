@@ -133,10 +133,6 @@ PRODUCT_COPY_FILES += \
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
-# Dexpreopt
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI
-
 # Display
 PRODUCT_PACKAGES += \
     disable_configstore \
@@ -360,7 +356,6 @@ PRODUCT_PACKAGES += \
    CarrierConfigOverlay \
    DialerOverlay \
    FrameworksResOverlay \
-   NotchBarKillerOverlay \
    SettingsOverlay \
    SettingsProviderOverlay \
    SystemUIOverlay \
@@ -406,6 +401,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.recovery.qcom.rc:recovery/root/init.recovery.qcom.rc \
     $(LOCAL_PATH)/rootdir/bin/init.recovery.qcom.sh:recovery/root/init.recovery.qcom.sh
+
+# RemovePackages
+PRODUCT_PACKAGES += \
+    RemovePackages
 
 # RIL
 PRODUCT_PACKAGES += \
