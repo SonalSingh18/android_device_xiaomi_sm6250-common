@@ -6,18 +6,6 @@
     "branch": "master"
   },
   {
-    "remote": "github",
-    "repository": "ArrowOS-Devices/android_packages_apps_GCamGOPrebuilt",
-    "target_path": "packages/apps/GCamGOPrebuilt",
-    "branch": "arrow-13.1"
-  },
-  {
-    "remote": "github",
-    "repository": "ArrowOS-Devices/android_hardware_xiaomi", 
-    "target_path": "hardware/xiaomi",
-    "branch": "arrow-13.1"
-  },
-  {
     "remote": "gitlab",
     "repository": "SonalSingh18/vendor_xiaomi_miuicamera",
     "target_path": "vendor/xiaomi/miuicamera",
