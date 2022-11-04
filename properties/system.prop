@@ -16,6 +16,9 @@ persist.vendor.btstack.enable.lpa=true
 persist.vendor.btstack.enable.twsplus=true
 persist.vendor.service.bdroid.soc.alwayson=true
 
+# Brightness Curve
+persist.sys.brightness.low.gamma=true
+
 # Camera
 ro.miui.notch=1
 vendor.camera.aux.packagelist=com.android.camera,org.lineageos.aperture,org.pixelexperience.faceunlock
