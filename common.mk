@@ -340,6 +340,8 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+   ApertureOverlay \
+   ApertureDevOverlay \
    CarrierConfigOverlay \
    DialerOverlay \
    FrameworksResOverlay \
