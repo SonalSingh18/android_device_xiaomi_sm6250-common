@@ -22,6 +22,7 @@ persist.vendor.service.bdroid.soc.alwayson=true
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive
 
 # Camera
+ro.miui.notch=1
 vendor.camera.aux.packagelist=com.android.camera,org.lineageos.aperture,org.pixelexperience.faceunlock
 persist.vendor.camera.privapp.list=com.android.camera,org.lineageos.aperture
 

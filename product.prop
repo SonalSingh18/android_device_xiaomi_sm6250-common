@@ -5,8 +5,8 @@ ro.charger.enable_suspend=true
 ro.config.low_ram=false
 
 # Camera
-persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
+ro.hardware.camera=xiaomi
+ro.com.google.lens.oem_camera_package=com.android.camera
 
 # Incremental FS
 ro.incremental.enable=1
