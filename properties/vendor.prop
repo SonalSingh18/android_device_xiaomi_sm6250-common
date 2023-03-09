@@ -222,5 +222,10 @@ persist.vendor.sensors.allow_non_default_discovery=true
 ro.soc.manufacturer=QTI
 ro.soc.model=SM7125
 
+# Spatial Audio
+ro.audio.spatializer_enabled=true
+ro.audio.spatializer_transaural_enabled_default=false
+persist.vendor.audio.spatializer.speaker_enabled=true
+
 # Wi-Fi
 wifi.aware.interface=wifi-aware0
