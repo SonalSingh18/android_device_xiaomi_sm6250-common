@@ -150,6 +150,9 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 # Keyguard
 keyguard.no_require_sim=true
 
+# FS-verity
+ro.apk_verity.mode=2
+
 # Keystore
 ro.hardware.keystore_desede=true
 # IMS
