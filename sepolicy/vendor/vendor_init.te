@@ -8,7 +8,6 @@ set_prop(vendor_init, vendor_camera_prop)
 set_prop(vendor_init, vendor_ssr_prop)
 
 allow vendor_init {
-  vendor_debugfs_clk
   proc_dirty
   proc
 }:file w_file_perms;
