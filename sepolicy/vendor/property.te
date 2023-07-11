@@ -9,3 +9,5 @@ type power_prop, property_type;
 
 # Thermal
 type vendor_thermal_engine_prop, property_type;
+
+vendor_internal_prop(vendor_fastcharge_prop);
