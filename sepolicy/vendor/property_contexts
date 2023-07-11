@@ -18,3 +18,6 @@ vendor.powerhal.audio                   u:object_r:vendor_power_prop:s0
 vendor.powerhal.lpm                     u:object_r:vendor_power_prop:s0
 vendor.powerhal.init                    u:object_r:vendor_power_prop:s0
 vendor.powerhal.rendering               u:object_r:vendor_power_prop:s0
+
+# Fastcharge HAL
+persist.vendor.sec.fastchg_enabled      u:object_r:vendor_fastcharge_prop:s0
