@@ -34,4 +34,7 @@
        have distinct intensity levels -->
   <bool name="config_vibration_supports_multiple_intensities">true</bool>
 
+  <!-- Whether to enable Lineage Fast Charge Preference -->
+  <bool name="config_lineageFastChargeSupported">true</bool>
+
 </resources>
