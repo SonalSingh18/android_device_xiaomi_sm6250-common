@@ -128,7 +128,8 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.qti.vendor \
     libqdMetaData \
     libtinyxml \
-    memtrack.atoll
+    memtrack.atoll \
+    libvulkan
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4-impl \
