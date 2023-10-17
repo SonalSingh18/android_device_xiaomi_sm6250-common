@@ -184,6 +184,9 @@ TARGET_SYSTEM_PROP += $(COMMON_PATH)/properties/system.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/properties/vendor.prop
 TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/properties/system_ext.prop
 
+# Power
+TARGET_HAS_NO_POWER_STATS := true
+
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
 
