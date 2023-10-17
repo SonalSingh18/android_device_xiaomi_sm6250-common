@@ -17,7 +17,7 @@
             <name>IEffectsFactory</name>
             <instance>default</instance>
         </interface>
-        <fqname>@7.0::IEffectsFactory/default</fqname>
+        <fqname>@7.1::IEffectsFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.biometrics.fingerprint</name>
