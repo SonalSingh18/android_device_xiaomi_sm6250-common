@@ -1,0 +1,22 @@
+[
+  {
+    "repository"  : "kernel_xiaomi_sm6250",
+    "target_path" : "kernel/xiaomi/sm6250"
+  },
+  {
+    "repository"  : "vendor_xiaomi_sm6250-common",
+    "target_path" : "vendor/xiaomi/sm6250-common"
+  },
+  {
+    "remote"      : "gitlab",
+    "branch"      : "fourteen",
+    "repository"  : "SonalSingh18/android_vendor_xiaomi_miuicamera",
+    "target_path" : "vendor/xiaomi/miuicamera"
+  },
+  {
+    "remote"      : "github",
+    "branch"      : "lineage-21",
+    "repository"  : "LineageOS/android_hardware_sony_timekeep",
+    "target_path" : "hardware/sony/timekeep"
+  }
+]
