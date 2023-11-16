@@ -261,9 +261,7 @@ PRODUCT_PACKAGES += \
     WifiOverlay
 
 PRODUCT_PACKAGES += \
-    SM6250Aperture \
-    SM6250LineageDialer \
-    SM6250LineageSDK
+    SM6250Aperture
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -405,10 +403,6 @@ PRODUCT_COPY_FILES += \
 # TimeKeep
 PRODUCT_PACKAGES += \
     TimeKeep
-
-# Trust
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
 
 # USB
 PRODUCT_PACKAGES += \
