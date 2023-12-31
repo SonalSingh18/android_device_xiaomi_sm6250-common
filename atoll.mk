@@ -29,7 +29,8 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio-impl \
-    android.hardware.soundtrigger@2.2-impl
+    android.hardware.soundtrigger@2.2-impl \
+    android.media.audio.common.types-V1-cpp
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
